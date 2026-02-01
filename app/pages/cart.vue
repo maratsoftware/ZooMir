@@ -33,16 +33,49 @@
           class="flex flex-wrap items-center justify-between gap-4 rounded-xl border border-slate-700/80 bg-slate-800/60 p-5"
           role="listitem"
         >
-          <div>
+          <div class="min-w-0 flex-1">
             <p class="font-medium text-white">{{ item.name }}</p>
             <p class="mt-1 text-sm text-slate-400">
-              {{ formatPrice(item.price) }} × {{ item.quantity }}
+              {{ formatPrice(item.price) }} за шт.
             </p>
           </div>
-          <div class="flex items-center gap-4">
-            <span class="font-semibold text-emerald-400" aria-label="Сумма по позиции">
+
+          <div class="flex items-center gap-3">
+            <div
+              class="flex items-center gap-1 rounded-lg border border-slate-600 bg-slate-800/80"
+              role="group"
+              :aria-label="`Количество: ${item.name}`"
+            >
+              <button
+                type="button"
+                class="flex size-10 shrink-0 items-center justify-center rounded-l-lg text-slate-300 transition-colors hover:bg-slate-700 hover:text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500 focus-visible:ring-inset disabled:opacity-40 disabled:hover:bg-transparent"
+                :aria-label="`Уменьшить количество ${item.name}`"
+                :disabled="item.quantity <= 1"
+                @click="changeQuantity(item.productId, item.quantity - 1)"
+              >
+                <Icon name="lucide:minus" class="size-4" aria-hidden="true" />
+              </button>
+              <span
+                class="min-w-8 px-2 text-center font-medium text-white tabular-nums"
+                aria-live="polite"
+                aria-atomic="true"
+              >
+                {{ item.quantity }}
+              </span>
+              <button
+                type="button"
+                class="flex size-10 shrink-0 items-center justify-center rounded-r-lg text-slate-300 transition-colors hover:bg-slate-700 hover:text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500 focus-visible:ring-inset"
+                :aria-label="`Увеличить количество ${item.name}`"
+                @click="changeQuantity(item.productId, item.quantity + 1)"
+              >
+                <Icon name="lucide:plus" class="size-4" aria-hidden="true" />
+              </button>
+            </div>
+
+            <span class="min-w-[5rem] text-right font-semibold text-emerald-400" aria-label="Сумма по позиции">
               {{ formatPrice(item.price * item.quantity) }}
             </span>
+
             <SharedButton
               variant="ghost"
               :aria-label="`Удалить из корзины: ${item.name}`"
@@ -72,6 +105,10 @@
 import { formatPrice } from '~/shared/utils/formatPrice'
 
 const cartStore = useCartStore()
+
+function changeQuantity(productId: string, newQuantity: number) {
+  cartStore.updateQuantity(productId, newQuantity)
+}
 
 useSeoMeta({
   title: 'Корзина — ZooMir',
