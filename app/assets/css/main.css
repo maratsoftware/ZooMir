@@ -1,0 +1,4 @@
+/* Global base styles (Tailwind loaded by @nuxtjs/tailwindcss) */
+html {
+  scroll-behavior: smooth;
+}
