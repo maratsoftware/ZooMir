@@ -4,13 +4,13 @@
       <h1 class="text-3xl font-bold text-white">
         Оформление заказа
       </h1>
-      <p class="mt-2 text-slate-400">
+      <p class="mt-2 text-zinc-400">
         Укажите данные для доставки. Мы свяжемся с вами для подтверждения.
       </p>
     </header>
 
-    <section v-if="cartStore.items.length === 0" class="rounded-2xl border border-slate-700/80 bg-slate-800/50 p-12 text-center" aria-live="polite">
-      <p class="text-slate-400">
+    <section v-if="cartStore.items.length === 0" class="rounded-2xl border border-zinc-700/80 bg-zinc-800/50 p-12 text-center" aria-live="polite">
+      <p class="text-zinc-400">
         Корзина пуста.
       </p>
       <NuxtLink
@@ -21,7 +21,7 @@
       </NuxtLink>
     </section>
 
-    <section v-else class="rounded-2xl border border-slate-700/80 bg-slate-800/50 p-8" aria-labelledby="checkout-section-heading">
+    <section v-else class="rounded-2xl border border-zinc-700/80 bg-zinc-800/50 p-8" aria-labelledby="checkout-section-heading">
       <h2 id="checkout-section-heading" class="sr-only">
         Форма оформления
       </h2>

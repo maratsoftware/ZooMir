@@ -31,7 +31,7 @@ const MOCK_PRODUCTS: Product[] = [
     description: 'Полнорационный корм премиум-класса, созданный для ежедневного поддержания здоровья вашего питомца. Оптимальный баланс белков и жиров обеспечивает энергией, а уникальный комплекс пребиотиков заботится о чувствительном пищеварении. Особая форма гранул способствует механической чистке зубов, предотвращая появление налета.',
     category: 'Для кошек',
     price: 1299,
-    image: 'https://images.unsplash.com/photo-1583337130417-3346a1be7dee?w=500&h=500&fit=crop', // Кот ест из миски
+    image: 'https://images.squarespace-cdn.com/content/596e6740a803bbe388e1a1e9/1500491664942-ZL4XDIZDUJWUUECHKBQY/thumb-square.jpg?content-type=image%2Fjpeg', // Кот ест из миски
     composition: 'Курица (26%), рис (24%), куриный жир, кукуруза, сушёная свёкла, рыбий жир, таурин, витамины и минералы.',
     country: 'Франция',
     reviews: [
@@ -45,7 +45,7 @@ const MOCK_PRODUCTS: Product[] = [
     description: 'Аппетитные хрустящие косточки, перед которыми невозможно устоять. Идеальное решение для поощрения во время дрессировки или просто чтобы порадовать любимца. Твердая текстура лакомства помогает массировать десны и очищать зубы от зубного камня в игровой форме.',
     category: 'Для собак',
     price: 349,
-    image: 'https://images.unsplash.com/photo-1535930749574-1399327ce78f?w=500&h=500&fit=crop', // Собака с лакомством
+    image: 'https://images.squarespace-cdn.com/content/596e6740a803bbe388e1a1e9/1500491664942-ZL4XDIZDUJWUUECHKBQY/thumb-square.jpg?content-type=image%2Fjpeg', // Собака с лакомством
     composition: 'Говядина (40%), рис, горох, подсолнечное масло, витамин E, натуральные ароматизаторы.',
     country: 'Германия',
     reviews: [
@@ -59,7 +59,7 @@ const MOCK_PRODUCTS: Product[] = [
     description: 'Научно разработанная формула для контроля веса после стерилизации. Пониженное содержание жиров и добавление L-карнитина помогают сжигать лишние калории, сохраняя мышечную массу. Сбалансированный уровень минералов поддерживает здоровье мочевыделительной системы и предотвращает образование камней.',
     category: 'Для кошек',
     price: 1899,
-    image: 'https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?w=500&h=500&fit=crop', // Эстетичное фото кота крупным планом
+    image: 'https://images.squarespace-cdn.com/content/596e6740a803bbe388e1a1e9/1500491664942-ZL4XDIZDUJWUUECHKBQY/thumb-square.jpg?content-type=image%2Fjpeg', // Эстетичное фото кота крупным планом
     composition: 'Индейка (28%), рис, кукурузная крупа, куриный жир, целлюлоза, L-карнитин, клюква, витамины, таурин.',
     country: 'Нидерланды',
     reviews: [
@@ -73,7 +73,7 @@ const MOCK_PRODUCTS: Product[] = [
     description: 'Сочные мясные кусочки в густом ароматном соусе — настоящий деликатес для вашей собаки. Высокое содержание влаги помогает поддерживать водный баланс организма. Отличный выбор для разнообразия рациона или для собак, которые плохо едят сухой корм.',
     category: 'Для собак',
     price: 89,
-    image: 'https://images.unsplash.com/photo-1589924691195-41432c84c161?w=500&h=500&fit=crop', // Миска с едой
+    image: 'https://images.squarespace-cdn.com/content/596e6740a803bbe388e1a1e9/1500491664942-ZL4XDIZDUJWUUECHKBQY/thumb-square.jpg?content-type=image%2Fjpeg', // Миска с едой
     composition: 'Говядина (50%), бульон, морковь, горох, рис, подсолнечное масло, минеральные вещества.',
     country: 'Россия',
     reviews: [
@@ -87,7 +87,7 @@ const MOCK_PRODUCTS: Product[] = [
     description: 'Воздушный паштет с тающей текстурой, который придется по вкусу даже самым привередливым гурманам. Идеально подходит для котят при переходе на взрослую пищу и для пожилых кошек с чувствительными зубами. Максимум мясных ингредиентов и никаких злаков.',
     category: 'Для кошек',
     price: 65,
-    image: 'https://images.unsplash.com/photo-1623366302587-bca021d6616d?w=500&h=500&fit=crop', // Кошка облизывается
+    image: 'https://images.squarespace-cdn.com/content/596e6740a803bbe388e1a1e9/1500491664942-ZL4XDIZDUJWUUECHKBQY/thumb-square.jpg?content-type=image%2Fjpeg', // Кошка облизывается
     composition: 'Курица (45%), печень куриная (15%), бульон, рис, витамины A, E, D3, таурин.',
     country: 'Польша',
     reviews: [
@@ -101,7 +101,7 @@ const MOCK_PRODUCTS: Product[] = [
     description: 'Фундамент здорового будущего вашего питомца. Формула обогащена кальцием для крепкого скелета и жирными кислотами DHA для правильного развития мозга и зрения. Гранулы специально адаптированы под молочные зубы щенков, облегчая разгрызание и усвоение питательных веществ.',
     category: 'Для собак',
     price: 2199,
-    image: 'https://images.unsplash.com/photo-1591946614720-90a587da4a36?w=500&h=500&fit=crop', // Милый щенок
+    image: 'https://images.squarespace-cdn.com/content/596e6740a803bbe388e1a1e9/1500491664942-ZL4XDIZDUJWUUECHKBQY/thumb-square.jpg?content-type=image%2Fjpeg', // Милый щенок
     composition: 'Ягнёнок (25%), рис, кукуруза, куриный жир, рыбий жир (DHA), кальций, витамины, хондроитин.',
     country: 'Франция',
     reviews: [
@@ -115,7 +115,7 @@ const MOCK_PRODUCTS: Product[] = [
     description: 'Спасение для кошек с аллергией и нежным желудком. Гипоаллергенный состав на основе мяса ягненка исключает популярные аллергены. Легкоусвояемые углеводы и пребиотики MOS нормализуют микрофлору кишечника, избавляя от дискомфорта после еды.',
     category: 'Для кошек',
     price: 1599,
-    image: 'https://images.unsplash.com/photo-1526336024174-e58f5cdd8e13?w=500&h=500&fit=crop', // Кошка с бабочкой (символ легкости/деликатности)
+    image: 'https://images.squarespace-cdn.com/content/596e6740a803bbe388e1a1e9/1500491664942-ZL4XDIZDUJWUUECHKBQY/thumb-square.jpg?content-type=image%2Fjpeg', // Кошка с бабочкой (символ легкости/деликатности)
     composition: 'Ягнёнок (30%), рис, картофель, куриный жир, пребиотики MOS, омега-3, витамины, таурин.',
     country: 'Германия',
     reviews: [
@@ -129,7 +129,7 @@ const MOCK_PRODUCTS: Product[] = [
     description: 'Профессиональный уход за полостью рта в домашних условиях. Уникальная текстура и активные компоненты (цитрат цинка) эффективно борются с бактериальным налетом, предотвращая появление зубного камня. Свежее дыхание и здоровые десны вашего питомца каждый день.',
     category: 'Для собак',
     price: 449,
-    image: 'https://images.unsplash.com/photo-1529927066849-79b791a69825?w=500&h=500&fit=crop', // Собака жует
+    image: 'https://images.squarespace-cdn.com/content/596e6740a803bbe388e1a1e9/1500491664942-ZL4XDIZDUJWUUECHKBQY/thumb-square.jpg?content-type=image%2Fjpeg', // Собака жует
     composition: 'Злаки, мясные субпродукты, минералы (в т.ч. цитрат цинка), витамины, целлюлоза.',
     country: 'Великобритания',
     reviews: [
@@ -143,7 +143,7 @@ const MOCK_PRODUCTS: Product[] = [
     description: 'Комплексная поддержка организма в зрелом возрасте. Специальная формула с хондропротекторами защищает суставы, возвращая радость движения. Сниженный уровень фосфора бережет почки, а мощный комплекс антиоксидантов замедляет процессы старения на клеточном уровне.',
     category: 'Для кошек',
     price: 1699,
-    image: 'https://images.unsplash.com/photo-1568152950566-c1bf43b4ab28?w=500&h=500&fit=crop', // Спокойная взрослая кошка
+    image: 'https://images.squarespace-cdn.com/content/596e6740a803bbe388e1a1e9/1500491664942-ZL4XDIZDUJWUUECHKBQY/thumb-square.jpg?content-type=image%2Fjpeg', // Спокойная взрослая кошка
     composition: 'Курица (27%), рис, овёс, куриный жир, глюкозамин, хондроитин, клюква, антиоксиданты, таурин.',
     country: 'Нидерланды',
     reviews: [
@@ -157,7 +157,7 @@ const MOCK_PRODUCTS: Product[] = [
     description: 'Универсальный рацион для активной жизни. Сбалансированное сочетание мясных протеинов и углеводов обеспечивает собаку зарядом бодрости на весь день. Натуральные источники омега-3 и омега-6 жирных кислот делают шерсть густой и блестящей, укрепляя кожный барьер.',
     category: 'Для собак',
     price: 2499,
-    image: 'https://images.unsplash.com/photo-1601758228041-f3b2795255f1?w=500&h=500&fit=crop', // Активная собака на улице
+    image: 'https://images.squarespace-cdn.com/content/596e6740a803bbe388e1a1e9/1500491664942-ZL4XDIZDUJWUUECHKBQY/thumb-square.jpg?content-type=image%2Fjpeg', // Активная собака на улице
     composition: 'Мясо птицы (22%), кукуруза, пшеница, ячмень, куриный жир, свёкла, рыбий жир, витамины и минералы.',
     country: 'Италия',
     reviews: [
@@ -171,7 +171,7 @@ const MOCK_PRODUCTS: Product[] = [
     description: 'Хрустящие подушечки с нежной начинкой внутри — маленькое удовольствие, от которого ваш питомец будет мурчать от счастья. Содержит жизненно важный таурин для поддержки сердца и остроты зрения. Отличный способ проявить заботу и укрепить эмоциональную связь с кошкой.',
     category: 'Для кошек',
     price: 279,
-    image: 'https://images.unsplash.com/photo-1513245543132-31f507417b26?w=500&h=500&fit=crop', // Игривая кошка
+    image: 'https://images.squarespace-cdn.com/content/596e6740a803bbe388e1a1e9/1500491664942-ZL4XDIZDUJWUUECHKBQY/thumb-square.jpg?content-type=image%2Fjpeg', // Игривая кошка
     composition: 'Мясо и субпродукты (35%), злаки, таурин (0,15%), витамины, минералы. Без сахара.',
     country: 'Россия',
     reviews: [
@@ -185,7 +185,7 @@ const MOCK_PRODUCTS: Product[] = [
     description: 'Строгая монобелковая диета для самых чувствительных. В составе только мясо утки — редкий источник белка, на который практически не бывает аллергии. Полное отсутствие зерновых, курицы и сои гарантирует спокойствие кожи и комфортное пищеварение.',
     category: 'Для собак',
     price: 2899,
-    image: 'https://images.unsplash.com/photo-1620916566398-39f1143ab7be?w=500&h=500&fit=crop', // Собака в поле/на природе
+    image: 'https://images.squarespace-cdn.com/content/596e6740a803bbe388e1a1e9/1500491664942-ZL4XDIZDUJWUUECHKBQY/thumb-square.jpg?content-type=image%2Fjpeg', // Собака в поле/на природе
     composition: 'Утка (28%), горох, чечевица, утиный жир, картофель, минералы, витамины. Без зерна.',
     country: 'Канада',
     reviews: [
@@ -199,7 +199,7 @@ const MOCK_PRODUCTS: Product[] = [
     description: 'Изысканный рыбный коктейль из тунца и лосося для истинных ценителей морепродуктов. Натуральный источник Омега-3 жирных кислот, которые делают шерсть шелковистой и сияющей. Не содержит искусственных красителей и ароматизаторов — только польза океана.',
     category: 'Для кошек',
     price: 79,
-    image: 'https://images.unsplash.com/photo-1596752765376-793540118501?w=500&h=500&fit=crop', // Порция еды или кошка рядом с едой
+    image: 'https://images.squarespace-cdn.com/content/596e6740a803bbe388e1a1e9/1500491664942-ZL4XDIZDUJWUUECHKBQY/thumb-square.jpg?content-type=image%2Fjpeg', // Порция еды или кошка рядом с едой
     composition: 'Тунец (40%), лосось (15%), бульон, рис, подсолнечное масло, омега-3, таурин, витамины.',
     country: 'Таиланд',
     reviews: [
@@ -213,7 +213,7 @@ const MOCK_PRODUCTS: Product[] = [
     description: 'Топливо для чемпионов. Высококалорийная формула разработана специально для служебных, охотничьих и спортивных собак. Повышенное содержание белка способствует быстрому восстановлению мышц после нагрузок, а глюкозамин защищает суставы при интенсивном беге.',
     category: 'Для собак',
     price: 2699,
-    image: 'https://images.unsplash.com/photo-1552053831-71594a27632d?w=500&h=500&fit=crop', // Бегущая собака
+    image: 'https://images.squarespace-cdn.com/content/596e6740a803bbe388e1a1e9/1500491664942-ZL4XDIZDUJWUUECHKBQY/thumb-square.jpg?content-type=image%2Fjpeg', // Бегущая собака
     composition: 'Говядина (26%), кукуруза, пшеница, куриный жир, глюкозамин, L-карнитин, витамины E и C, селен.',
     country: 'США',
     reviews: [
@@ -227,7 +227,7 @@ const MOCK_PRODUCTS: Product[] = [
     description: 'Лучший старт в жизни вашего котенка. Мелкие крокетики легко разгрызаются молочными зубками. Высокая концентрация белка обеспечивает бурный рост, а кальций укрепляет кости. Усиленная формула иммунитета помогает неокрепшему организму противостоять инфекциям.',
     category: 'Для кошек',
     price: 1399,
-    image: 'https://images.unsplash.com/photo-1561948955-570b270e7c36?w=500&h=500&fit=crop', // Маленький котенок
+    image: 'https://images.squarespace-cdn.com/content/596e6740a803bbe388e1a1e9/1500491664942-ZL4XDIZDUJWUUECHKBQY/thumb-square.jpg?content-type=image%2Fjpeg', // Маленький котенок
     composition: 'Курица (30%), рис, кукуруза, куриный жир, рыбий жир (DHA), кальций, таурин, витамины для котят.',
     country: 'Франция',
     reviews: [
