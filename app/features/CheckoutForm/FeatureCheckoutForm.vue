@@ -70,7 +70,6 @@ const emit = defineEmits<{ success: [] }>()
 
 function submit() {
   isSubmitting.value = true
-  // Mock: show success and clear cart
   setTimeout(() => {
     alert('Заказ успешно оформлен! Спасибо за покупку.')
     useCartStore().clearCart()

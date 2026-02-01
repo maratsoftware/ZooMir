@@ -4,13 +4,13 @@
     role="list"
     aria-label="Список товаров"
   >
-    <li
+  <li
       v-for="product in products"
       :key="product.id"
       role="listitem"
     >
       <article
-        class="group flex h-full flex-col overflow-hidden rounded-2xl border border-slate-700/80 bg-slate-800/60 transition-all duration-300 hover:border-slate-600 hover:bg-slate-800 hover:shadow-lg hover:shadow-slate-950/50 focus-within:ring-2 focus-within:ring-emerald-500 focus-within:ring-offset-2 focus-within:ring-offset-slate-900"
+        class="relative group flex h-full flex-col overflow-hidden rounded-2xl border border-slate-700/80 bg-slate-800/60 transition-all duration-300 hover:border-slate-600 hover:bg-slate-800 hover:shadow-lg hover:shadow-slate-950/50 focus-within:ring-2 focus-within:ring-emerald-500 focus-within:ring-offset-2 focus-within:ring-offset-slate-900"
         :aria-labelledby="`product-title-${product.id}`"
       >
         <div class="relative aspect-square w-full overflow-hidden bg-slate-700/50">
