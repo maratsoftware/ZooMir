@@ -1,7 +1,7 @@
 <template>
   <article v-if="product" class="mx-auto max-w-4xl px-4 py-8" aria-labelledby="product-name">
     <nav aria-label="Хлебные крошки" class="mb-6">
-      <ol class="flex flex-wrap items-center gap-2 text-sm text-slate-400">
+      <ol class="flex flex-wrap items-center gap-2 text-sm text-zinc-400">
         <li>
           <NuxtLink to="/" class="transition-colors hover:text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500 rounded">
             Магазин
@@ -13,7 +13,7 @@
     </nav>
 
     <div class="grid gap-8 lg:grid-cols-2">
-      <div class="relative aspect-square overflow-hidden rounded-2xl bg-slate-800/80">
+      <div class="relative aspect-square overflow-hidden rounded-2xl bg-zinc-800/80">
         <img
           v-if="product.image"
           :src="product.image"
@@ -23,11 +23,11 @@
           class="h-full w-full object-cover"
           fetchpriority="high"
         />
-        <div v-else class="flex h-full w-full items-center justify-center text-slate-500" aria-hidden="true">
+        <div v-else class="flex h-full w-full items-center justify-center text-zinc-500" aria-hidden="true">
           <Icon name="lucide:package" class="size-24" />
         </div>
         <span
-          class="absolute left-4 top-4 rounded-full bg-slate-900/90 px-3 py-1.5 text-sm font-medium text-slate-300 backdrop-blur-sm"
+          class="absolute left-4 top-4 rounded-full bg-zinc-900/90 px-3 py-1.5 text-sm font-medium text-zinc-300 backdrop-blur-sm"
           aria-hidden="true"
         >
           {{ product.category }}
@@ -41,7 +41,7 @@
         <p class="mt-4 text-2xl font-bold text-emerald-400" aria-label="Цена">
           {{ formatPrice(product.price) }}
         </p>
-        <p class="mt-6 text-slate-300 leading-relaxed">
+        <p class="mt-6 text-zinc-300 leading-relaxed">
           {{ product.description }}
         </p>
         <div class="mt-8">
@@ -50,53 +50,51 @@
       </div>
     </div>
 
-    <!-- Состав и страна производитель -->
-    <section class="mt-12 grid gap-8 border-t border-slate-700/80 pt-10 sm:grid-cols-2">
-      <div v-if="product.composition" class="rounded-xl border border-slate-700/80 bg-slate-800/50 p-6" aria-labelledby="composition-heading">
+    <section class="mt-12 grid gap-8 border-t border-zinc-700/80 pt-10 sm:grid-cols-2">
+      <div v-if="product.composition" class="rounded-xl border border-zinc-700/80 bg-zinc-800/50 p-6" aria-labelledby="composition-heading">
         <h2 id="composition-heading" class="flex items-center gap-2 text-lg font-semibold text-white">
           <Icon name="lucide:list-checks" class="size-5 text-emerald-500" aria-hidden="true" />
           Состав
         </h2>
-        <p class="mt-3 text-slate-300 leading-relaxed">
+        <p class="mt-3 text-zinc-300 leading-relaxed">
           {{ product.composition }}
         </p>
       </div>
-      <div v-if="product.country" class="rounded-xl border border-slate-700/80 bg-slate-800/50 p-6" aria-labelledby="country-heading">
+      <div v-if="product.country" class="rounded-xl border border-zinc-700/80 bg-zinc-800/50 p-6" aria-labelledby="country-heading">
         <h2 id="country-heading" class="flex items-center gap-2 text-lg font-semibold text-white">
           <Icon name="lucide:globe" class="size-5 text-emerald-500" aria-hidden="true" />
           Страна производитель
         </h2>
-        <p class="mt-3 text-slate-300">
+        <p class="mt-3 text-zinc-300">
           {{ product.country }}
         </p>
       </div>
     </section>
 
-    <!-- Отзывы -->
-    <section v-if="product.reviews?.length" class="mt-12 border-t border-slate-700/80 pt-10" aria-labelledby="reviews-heading">
+    <section v-if="product.reviews?.length" class="mt-12 border-t border-zinc-700/80 pt-10" aria-labelledby="reviews-heading">
       <h2 id="reviews-heading" class="flex items-center gap-2 text-xl font-semibold text-white">
         <Icon name="lucide:message-circle" class="size-5 text-emerald-500" aria-hidden="true" />
         Отзывы покупателей
-        <span class="text-slate-400 font-normal">({{ product.reviews.length }})</span>
+        <span class="text-zinc-400 font-normal">({{ product.reviews.length }})</span>
       </h2>
       <ul class="mt-6 space-y-6" role="list" aria-label="Список отзывов">
         <li
           v-for="review in product.reviews"
           :key="review.id"
-          class="rounded-xl border border-slate-700/80 bg-slate-800/50 p-5"
+          class="rounded-xl border border-zinc-700/80 bg-zinc-800/50 p-5"
           role="listitem"
         >
           <div class="flex flex-wrap items-center justify-between gap-2">
             <span class="font-medium text-white">{{ review.author }}</span>
-            <span class="inline-flex items-center gap-1 rounded bg-slate-700/80 px-2 py-1 text-sm font-medium text-amber-400" aria-label="Оценка: {{ review.rating }} из 5">
+            <span class="inline-flex items-center gap-1 rounded bg-zinc-700/80 px-2 py-1 text-sm font-medium text-amber-400" aria-label="Оценка: {{ review.rating }} из 5">
               <Icon name="lucide:star" class="size-4 text-amber-400" aria-hidden="true" />
               {{ review.rating }} из 5
             </span>
           </div>
-          <p class="mt-2 text-slate-300 leading-relaxed">
+          <p class="mt-2 text-zinc-300 leading-relaxed">
             {{ review.text }}
           </p>
-          <time :datetime="review.date" class="mt-2 block text-sm text-slate-500">
+          <time :datetime="review.date" class="mt-2 block text-sm text-zinc-500">
             {{ formatReviewDate(review.date) }}
           </time>
         </li>
@@ -116,7 +114,7 @@
     </div>
   </div>
 
-  <p v-else class="mx-auto max-w-4xl px-4 py-12 text-center text-slate-400" role="alert">
+  <p v-else class="mx-auto max-w-4xl px-4 py-12 text-center text-zinc-400" role="alert">
     Товар не найден. <NuxtLink to="/" class="text-emerald-400 underline underline-offset-4 hover:text-emerald-300">Вернуться в каталог</NuxtLink>.
   </p>
 </template>

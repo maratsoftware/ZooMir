@@ -9,7 +9,7 @@
     :aria-invalid="ariaInvalid"
     :aria-describedby="ariaDescribedby"
     :autocomplete="autocomplete"
-    class="w-full rounded-xl border border-slate-600 bg-slate-800/80 px-4 py-3 text-white placeholder-slate-500 focus:border-emerald-500 focus:outline-none focus:ring-2 focus:ring-emerald-500/30 disabled:opacity-50 transition-colors"
+    class="w-full rounded-xl border border-zinc-600 bg-zinc-800/80 px-4 py-3 text-white placeholder-zinc-500 focus:border-emerald-500 focus:outline-none focus:ring-2 focus:ring-emerald-500/30 disabled:opacity-50 transition-colors"
     @input="$emit('update:modelValue', ($event.target as HTMLInputElement).value)"
   />
 </template>

@@ -10,10 +10,10 @@
       role="listitem"
     >
       <article
-        class="relative group flex h-full flex-col overflow-hidden rounded-2xl border border-slate-700/80 bg-slate-800/60 transition-all duration-300 hover:border-slate-600 hover:bg-slate-800 hover:shadow-lg hover:shadow-slate-950/50 focus-within:ring-2 focus-within:ring-emerald-500 focus-within:ring-offset-2 focus-within:ring-offset-slate-900"
+        class="relative group flex h-full flex-col overflow-hidden rounded-2xl border border-zinc-700/80 bg-zinc-800/60 transition-all duration-300 hover:border-zinc-600 hover:bg-zinc-800 hover:shadow-lg hover:shadow-zinc-950/50 focus-within:ring-2 focus-within:ring-emerald-500 focus-within:ring-offset-2 focus-within:ring-offset-zinc-900"
         :aria-labelledby="`product-title-${product.id}`"
       >
-        <div class="relative aspect-square w-full overflow-hidden bg-slate-700/50">
+        <div class="relative aspect-square w-full overflow-hidden bg-zinc-700/50">
           <img
             v-if="product.image"
             :src="product.image"
@@ -26,13 +26,13 @@
           />
           <div
             v-else
-            class="flex h-full w-full items-center justify-center text-slate-500"
+            class="flex h-full w-full items-center justify-center text-zinc-500"
             aria-hidden="true"
           >
             <Icon name="lucide:package" class="size-16" />
           </div>
           <span
-            class="absolute left-3 top-3 rounded-full bg-slate-900/80 px-2.5 py-1 text-xs font-medium text-slate-300 backdrop-blur-sm"
+            class="absolute left-3 top-3 rounded-full bg-zinc-900/80 px-2.5 py-1 text-xs font-medium text-zinc-300 backdrop-blur-sm"
             aria-hidden="true"
           >
             {{ product.category }}
@@ -48,7 +48,7 @@
               {{ product.name }}
             </NuxtLink>
           </h2>
-          <p class="mt-2 line-clamp-2 text-sm text-slate-400">
+          <p class="mt-2 line-clamp-2 text-sm text-zinc-400">
             {{ product.description }}
           </p>
           <div class="mt-4 flex flex-wrap items-center justify-between gap-3">

@@ -8,7 +8,7 @@
       Данные для доставки
     </h2>
     <div>
-      <label for="checkout-name" class="mb-1.5 block text-sm font-medium text-slate-300">
+      <label for="checkout-name" class="mb-1.5 block text-sm font-medium text-zinc-300">
         Имя
       </label>
       <SharedInput
@@ -21,7 +21,7 @@
       />
     </div>
     <div>
-      <label for="checkout-address" class="mb-1.5 block text-sm font-medium text-slate-300">
+      <label for="checkout-address" class="mb-1.5 block text-sm font-medium text-zinc-300">
         Адрес
       </label>
       <SharedInput
@@ -34,7 +34,7 @@
       />
     </div>
     <div>
-      <label for="checkout-phone" class="mb-1.5 block text-sm font-medium text-slate-300">
+      <label for="checkout-phone" class="mb-1.5 block text-sm font-medium text-zinc-300">
         Телефон
       </label>
       <SharedInput

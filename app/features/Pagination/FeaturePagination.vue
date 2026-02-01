@@ -12,7 +12,7 @@
     >
       Назад
     </SharedButton>
-    <span class="px-2 text-slate-400" aria-live="polite">
+    <span class="px-2 text-zinc-400" aria-live="polite">
       Страница <strong>{{ currentPage }}</strong> из {{ totalPages }}
     </span>
     <SharedButton

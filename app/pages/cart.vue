@@ -4,13 +4,13 @@
       <h1 class="text-3xl font-bold text-white">
         Корзина
       </h1>
-      <p class="mt-2 text-slate-400">
+      <p class="mt-2 text-zinc-400">
         Проверьте состав заказа перед оформлением.
       </p>
     </header>
 
-    <section v-if="cartStore.items.length === 0" class="rounded-2xl border border-slate-700/80 bg-slate-800/50 p-12 text-center" aria-live="polite">
-      <p class="text-slate-400">
+    <section v-if="cartStore.items.length === 0" class="rounded-2xl border border-zinc-700/80 bg-zinc-800/50 p-12 text-center" aria-live="polite">
+      <p class="text-zinc-400">
         Корзина пуста.
       </p>
       <NuxtLink
@@ -30,25 +30,25 @@
         <li
           v-for="item in cartStore.items"
           :key="item.productId"
-          class="flex flex-wrap items-center justify-between gap-4 rounded-xl border border-slate-700/80 bg-slate-800/60 p-5"
+          class="flex flex-wrap items-center justify-between gap-4 rounded-xl border border-zinc-700/80 bg-zinc-800/60 p-5"
           role="listitem"
         >
           <div class="min-w-0 flex-1">
             <p class="font-medium text-white">{{ item.name }}</p>
-            <p class="mt-1 text-sm text-slate-400">
+            <p class="mt-1 text-sm text-zinc-400">
               {{ formatPrice(item.price) }} за шт.
             </p>
           </div>
 
           <div class="flex items-center gap-3">
             <div
-              class="flex items-center gap-1 rounded-lg border border-slate-600 bg-slate-800/80"
+              class="flex items-center gap-1 rounded-lg border border-zinc-600 bg-zinc-800/80"
               role="group"
               :aria-label="`Количество: ${item.name}`"
             >
               <button
                 type="button"
-                class="flex size-10 shrink-0 items-center justify-center rounded-l-lg text-slate-300 transition-colors hover:bg-slate-700 hover:text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500 focus-visible:ring-inset disabled:opacity-40 disabled:hover:bg-transparent"
+                class="flex size-10 shrink-0 items-center justify-center rounded-l-lg text-zinc-300 transition-colors hover:bg-zinc-700 hover:text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500 focus-visible:ring-inset disabled:opacity-40 disabled:hover:bg-transparent"
                 :aria-label="`Уменьшить количество ${item.name}`"
                 :disabled="item.quantity <= 1"
                 @click="changeQuantity(item.productId, item.quantity - 1)"
@@ -64,7 +64,7 @@
               </span>
               <button
                 type="button"
-                class="flex size-10 shrink-0 items-center justify-center rounded-r-lg text-slate-300 transition-colors hover:bg-slate-700 hover:text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500 focus-visible:ring-inset"
+                class="flex size-10 shrink-0 items-center justify-center rounded-r-lg text-zinc-300 transition-colors hover:bg-zinc-700 hover:text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500 focus-visible:ring-inset"
                 :aria-label="`Увеличить количество ${item.name}`"
                 @click="changeQuantity(item.productId, item.quantity + 1)"
               >
@@ -87,7 +87,7 @@
         </li>
       </ul>
 
-      <section class="mt-8 flex flex-wrap items-center justify-between gap-4 rounded-xl border border-slate-700/80 bg-slate-800/50 p-6" aria-label="Итого">
+      <section class="mt-8 flex flex-wrap items-center justify-between gap-4 rounded-xl border border-zinc-700/80 bg-zinc-800/50 p-6" aria-label="Итого">
         <p class="text-lg font-semibold text-white">
           Итого: <span class="text-emerald-400">{{ formatPrice(cartStore.totalPrice) }}</span>
         </p>
