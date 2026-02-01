@@ -13,9 +13,7 @@ export interface Product {
   category: string
   price: number
   image?: string
-  /** Состав продукта */
   composition?: string
-  /** Страна производитель */
   country?: string
   reviews?: ProductReview[]
 }

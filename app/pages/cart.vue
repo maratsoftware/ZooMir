@@ -102,6 +102,7 @@
 </template>
 
 <script setup lang="ts">
+import { useCartStore } from '~/entities/cart/store/useCartStore';
 import { formatPrice } from '~/shared/utils/formatPrice'
 
 const cartStore = useCartStore()

@@ -59,6 +59,8 @@
 </template>
 
 <script setup lang="ts">
+import { useCartStore } from '~/entities/cart/store/useCartStore';
+
 const form = reactive({
   name: '',
   address: '',
