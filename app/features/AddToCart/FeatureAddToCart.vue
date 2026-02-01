@@ -20,6 +20,7 @@
 </template>
 
 <script setup lang="ts">
+import { useCartStore } from '~/entities/cart/store/useCartStore';
 import type { Product } from '~/entities/product/types'
 
 const props = defineProps<{

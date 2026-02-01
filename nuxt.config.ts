@@ -4,16 +4,16 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
 
   modules: [
+    '@nuxtjs/tailwindcss', 
+    '@nuxt/icon', 
     '@pinia/nuxt',
-    '@nuxtjs/tailwindcss',
-    '@nuxt/icon',
+    'pinia-plugin-persistedstate/nuxt'
   ],
 
   pinia: {
     storesDirs: ['./app/entities/**/store/*.ts', './app/features/**/store/*.ts'],
   },
 
-  // FSD: all under app/
   components: [
     { path: '~/shared/ui', pathPrefix: false, prefix: 'Shared', extensions: ['.vue'] },
     { path: '~/entities', pathPrefix: false, prefix: 'Entity', extensions: ['.vue'] },
