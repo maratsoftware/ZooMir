@@ -1,7 +1,7 @@
 <template>
-  <div class="flex min-h-screen flex-col bg-slate-900 text-slate-100">
+  <div class="flex min-h-screen flex-col bg-slate-950 text-slate-100">
     <WidgetHeader />
-    <main class="mx-auto w-full max-w-6xl flex-1 px-4 py-6">
+    <main id="main-content" class="mx-auto w-full max-w-6xl flex-1 px-4 py-8" role="main" aria-label="Основное содержимое">
       <slot />
     </main>
     <WidgetFooter />
